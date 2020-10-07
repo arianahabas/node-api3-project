@@ -2,11 +2,17 @@ const express = require('express');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.send(`<h2>Let's write some middleware!</h2>`);
-});
+const posts = require('./postDb')
+
 
 router.get('/:id', (req, res) => {
+  // posts.getById(req.params.id)
+  // .then(()=>{
+
+  // })
+  // .catch(()=>{
+
+  // })
   // do your magic!
 });
 
